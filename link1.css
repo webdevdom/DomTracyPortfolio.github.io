@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #EBF2F8;
+  font-family: 'Karla', sans-serif;
+}
+
+.tasks {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label {
+  background: #040C3A;
+  height: 70px;
+  width: 100%;
+  display: block;
+  color: #fff;
+  box-shadow: 2px 2px 10px;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+label h2 span {
+  display: block;
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #FF4A7B;
+  margin-top: 5px;
+}
+
+label:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+  transition: border 0.7 ease
+}
+#label-1checked ~ label[for=label-1],
+#label-2checked ~ label[for=label-2],
+#label-3checked ~ label[for=label-3],
+#label-4checked ~ label[for=label-4],
+#label-5checked ~ label[for=label-5]{
+  background: #FF4A7B;
+  color: #fff;
+}
+#label-1checked ~ label[for=label-1] h2 span,
+#label-2checked ~ label[for=label-2] h2 span,
+#label-3checked ~ label[for=label-3] h2 span,
+#label-4checked ~ label[for=label-4] h2 span,
+#label-5checked ~ label[for=label-5] h2 span{
+  color: #040C3A;
+}
+#label-1checked ~ label[for=label-1]:before,
+#label-2checked ~ label[for=label-2]:before,
+#label-3checked ~ label[for=label-3]:before,
+#label-4checked ~ label[for=label-4]:before,
+#label-5checked ~ label[for=label-5]:before{
+  background: url("check.png") no-repeat center center;
+  background-size: cover;
+}

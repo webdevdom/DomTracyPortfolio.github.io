@@ -1,0 +1,152 @@
+html, body{
+ height: 100%;
+ width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #080808;
+  font-family: 'Poppins', sans-serif;
+}
+
+.topnav a {
+  float: left;
+  color: #97989b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*
+.topnav a.active {
+  background-color: #97989b;
+  color: white;
+}
+*/
+
+/* container holding image and text */
+.main-container {
+  width: 100%;
+  margin: 0% 0% 0% 0%;
+}
+
+.main-container img {
+  width: 100%;
+  margin: 0% 0% 0% 0%;
+}
+
+/* Words on image */
+
+.imageheading h1 {
+  width: 100%;
+  position: relative;
+  margin-top: -52%;
+  text-align: center;
+  color: #bbbbbb;
+  font-size: 5.5vw;
+  margin-left: 8%;
+  font-weight: lighter;
+
+}
+
+.imagemiddle {
+  text-align: center;
+  color: #bbbbbb;
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 16%;
+  padding-top: 10px;
+
+}
+
+.imagebottom {
+  text-align: center;
+  color: #bbbbbb;
+  font-size: 1.5vw;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 16%;
+  padding-top: 4px;
+
+}
+
+/* TRANSITIONS */
+
+h1 {
+  transition-delay: 100ms;
+  transition-duration: 2s;
+  transition-timing-function: ease-in;
+  transition-property: color;
+}
+
+h1:hover {
+  color: #ddd;
+}
+
+a {
+  transition-delay: 100ms;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-property: color;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+.imagemiddle p {
+  transition-delay: 175ms;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-property: color;
+}
+
+.imagemiddle p:hover {
+  color: #ddd;
+}
+
+a {
+  transition-delay: 100ms;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in;
+  transition-property: all;
+}
+
+a:hover {
+  color: white;
+}
+
+
+
+/*
+.second-container {
+  margin-top: 700px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #e5e6e9;
+}
+
+.second-container h2, .second-container h3 {
+  text-align: center;
+  margin: 25px;
+}
+
+.second-container p, .second-container p {
+  text-align: justify;
+  text-align: center;
+}
+*/
