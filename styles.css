@@ -31,12 +31,6 @@ html, body{
   color: black;
 }
 
-/*
-.topnav a.active {
-  background-color: #97989b;
-  color: white;
-}
-*/
 
 /* container holding image and text */
 .main-container {
@@ -51,37 +45,39 @@ html, body{
 
 /* Words on image */
 
-.imageheading h1 {
-  width: 100%;
+.hero-image {
+  background-image: url("https://images.pexels.com/photos/234527/pexels-photo-234527.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  margin-top: -52%;
-  text-align: center;
-  color: #bbbbbb;
-  font-size: 5.5vw;
-  margin-left: 8%;
-  font-weight: lighter;
-
 }
 
-.imagemiddle {
+.hero-text {
   text-align: center;
+  position: absolute;
+  top: 37%;
+  left: 55%;
+  transform: translate(-50%, -50%);
   color: #bbbbbb;
-  font-size: 2vw;
   font-family: 'Poppins', sans-serif;
-  margin-left: 16%;
-  padding-top: 10px;
 
 }
 
-.imagebottom {
-  text-align: center;
-  color: #bbbbbb;
-  font-size: 1.5vw;
-  font-family: 'Poppins', sans-serif;
-  margin-left: 16%;
-  padding-top: 4px;
-
+.hero-text h1 {
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 20px;
+  font-size: 100px !important;
+  font-weight: 400;
+  white-space: nowrap;
 }
+
+.hero-text p {
+  font-size: 25.46px !important;
+  white-space: nowrap;
+}
+
 
 /* TRANSITIONS */
 
@@ -129,24 +125,39 @@ a:hover {
   color: white;
 }
 
+@media (max-width:768px) {
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #bbbbbb;
+    font-family: 'Poppins', sans-serif;
 
+  }
 
-/*
-.second-container {
-  margin-top: 700px;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #e5e6e9;
+  .hero-text h1 {
+    font-family: "Times New Roman", Times, serif;
+    padding-bottom: 20px;
+    font-size: 45px !important;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  .hero-text p {
+    font-size: 15px !important;
+    white-space: nowrap;
+  }
+
+  .topnav a {
+    float: left;
+    color: #97989b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+
+  }
 }
-
-.second-container h2, .second-container h3 {
-  text-align: center;
-  margin: 25px;
-}
-
-.second-container p, .second-container p {
-  text-align: justify;
-  text-align: center;
-}
-*/
